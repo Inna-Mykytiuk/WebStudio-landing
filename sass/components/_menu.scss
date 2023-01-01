@@ -1,0 +1,245 @@
+.menu {
+   font-weight: 500;
+   letter-spacing: 0.02em;
+
+   @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 90px;
+
+      width: 100vw;
+   }
+
+   .nav {
+      display: none;
+
+      @media (min-width: 768px) {
+         display: block;
+      }
+   }
+
+   .contacts {
+      display: none;
+
+      // @media (min-width: 768px) {
+      //    display: block;
+      // }
+   }
+
+   &.is-open {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      padding: 48px 40px;
+
+      overflow-y: scroll;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      background-color: $main-white-color;
+   }
+
+   &.is-open .nav {
+      display: block;
+   }
+
+   //контакти
+
+   &.is-open .contacts {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 64px;
+   }
+
+   &.is-open .contacts__item:last-child {
+      margin-bottom: 30px;
+   }
+
+   &.is-open .contacts__item:last-child .contacts__link {
+      color: $acent-color;
+      font-size: $fs-34;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+   }
+
+   &.is-open .contacts__item:not(:last-child) .contacts__link {
+      font-size: $fs-24;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+   }
+
+   //соціальні мережі
+
+   .menu-social {
+      display: none;
+   }
+
+   &.is-open .menu-social {
+      display: flex;
+   }
+
+   &.is-open .menu-social__item:not(:last-child) {
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+   }
+
+   .menu-social__link {
+      color: $acent-color;
+      font-size: $fs-18;
+      line-height: 1.22;
+      text-decoration: none;
+   }
+}
+
+.menu__contacts .contacts {
+   @media (min-width: 768px) {
+      margin: 19px 0;
+   }
+
+   @media (min-width: 1200px) {
+      margin: 0;
+   }
+}
+
+.site-nav {
+   @media (min-width: 768px) {
+      display: flex;
+   }
+
+   &__item:not(:last-child) {
+      margin-bottom: 32px;
+
+      @media (min-width: 768px) {
+         margin-right: 50px;
+         margin-bottom: 0;
+      }
+   }
+}
+
+.site-nav__link {
+   font-family: inherit;
+   color: $title-text-color;
+   text-decoration: none;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   font-weight: $fw-500;
+   font-size: $fs-40;
+   line-height: 1.17;
+
+   // display: inline-block;
+
+   @media (min-width: 768px) {
+      position: relative;
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      font-size: $fs-14;
+      line-height: 1.14;
+   }
+
+   &__link--current,
+   &:hover,
+   &:focus {
+      color: $acent-color;
+   }
+}
+
+.site-nav__link--current {
+   @media (max-width: 768px) {
+      color: $acent-color;
+
+      &:hover,
+      &:focus {
+         color: $acent-color;
+      }
+   }
+
+   @media (min-width: 768px) {
+      color: $acent-color;
+      position: relative;
+
+      &::after {
+         content: "";
+         display: block;
+         width: 100%;
+         height: 4px;
+         background: $acent-color;
+         border-radius: 2px;
+
+         position: absolute;
+         bottom: 0;
+         left: 0;
+      }
+   }
+}
+
+.menu__button {
+   width: 40px;
+   height: 40px;
+
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: none;
+   background-color: transparent;
+
+   @media (min-width: 768px) {
+      display: none;
+   }
+
+   &__link--current,
+   &:hover,
+   &:focus {
+      fill: $acent-color;
+   }
+}
+
+.menu__icon {
+   width: 24px;
+   height: 16px;
+}
+
+.menu__button.is-open {
+   position: absolute;
+   z-index: 1;
+   top: 10px;
+   right: 15px;
+}
+
+.menu__button .icon-cross {
+   display: none;
+}
+
+.menu__button.is-open .icon-cross {
+   display: block;
+   fill: currentColor;
+
+   width: 11px;
+   height: 11px;
+}
+
+.menu__button .icon-cross {
+   display: none;
+}
+
+.menu__button.is-open .icon-burger {
+   display: none;
+}
+
+.icon-cross {
+
+   &:hover,
+   &:focus {
+      color: $acent-color;
+   }
+}

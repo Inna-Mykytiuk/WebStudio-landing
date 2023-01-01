@@ -1,0 +1,18 @@
+.header {
+   background-color: $main-white-color;
+   border-bottom: 1px solid #ececec;
+
+   @media (min-width: 768px) {
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+}
+
+.header__container {
+   display: flex;
+   align-items: center;
+
+      @media (max-width: 1200px) {
+      justify-content: space-between;
+   }
+}

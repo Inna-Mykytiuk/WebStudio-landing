@@ -1,0 +1,74 @@
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$acent-color: #2196f3;
+$main-white-color: #ffffff;
+$hero-color: #2f303a;
+// $hero-grad:rgba(47, 48, 58, 0.4);
+$section-comand: #f5f4fa;
+$border-color: #eeeeee;
+$lonely-button: #188ce8;
+$icon-color: #AFB1B8;
+$hero-bcg: #c4c4c4;
+
+
+$main-font: "Roboto", sans-serif;
+$secondary-font: "Raleway", sans-serif;
+$fw-normal: 400;
+$fw-500: 500;
+$fw-bold: 700;
+$fw-900: 900;
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-24: 24px;
+$fs-26: 26px;
+$fs-28: 28px;
+$fs-32: 32px;
+$fs-34: 34px;
+$fs-36: 36px;
+$fs-40: 40px;
+$fs-44: 44px;
+
+
+$breakpoints: (
+   'mobileBox': 450px,
+   'mobile': 480px,
+   'tabletBox': 738px,
+   'tablet': 768px,
+   'desktop': 1200px,
+   );
+
+
+@mixin respond-from-min($breakpoint) {
+   @media screen and (min-width: getWidth($breakpoint)) {
+      @content;
+   }
+}
+
+@mixin respond-to-max($breakpoint) {
+   @media screen and (max-width: getWidth($breakpoint)) {
+      @content;
+   }
+}
+
+// @mixin transition($property) {
+//   transition: $property 250ms $cubic;
+// }
+
+// @mixin centered-flex($type: flex) {
+//   display: $type;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+
+
+
+
+
+
+
+
+

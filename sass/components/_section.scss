@@ -1,0 +1,30 @@
+.section {
+   background-color: $main-white-color;
+   padding: 60px 0;
+
+   @media (min-width: 1200px)  {
+   padding-top: 94px;
+   padding-bottom: 94px;
+   }
+
+   &__title {
+   font-weight: $fw-bold;
+   font-size: $fs-28;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+
+   color: $title-text-color;
+   text-align: center;
+
+   margin-top: 0;
+   margin-bottom: 30px;
+
+   @media (min-width: 1200px)  {
+   margin-bottom: 50px;
+
+   font-size: $fs-36;
+   line-height: 1.14;
+      }
+   }
+}
+

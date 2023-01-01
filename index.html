@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!---Шапка сайту-->
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="logo">
+        <span class="logo--accent">Web</span>Studio
+      </a>
+
+      <div class="menu js-menu-container">
+        <nav class="nav">
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="index.html" class="site-nav__link site-nav__link--current">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="portfolio.html" class="site-nav__link">Портфоліо</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu-contacts">
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link" aria-label="іконка">
+                <svg class="contacts__mail contacts__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link" aria-label="іконка">
+                <svg class="contacts__tel contacts__icon" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>+38 096 111 11 11</a>
+            </li>
+          </ul>
+
+          <!-- Social menu -->
+          <ul class="menu-social">
+            <li class="menu-social__item">
+              <a class="menu-social__link" href="./">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link" href="./">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link" href="./">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link" href="./">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="menu__button js-open-menu" data-menu-button type="button" aria-expanded="false">
+        <svg class="menu__icon" aria-label="Перемикач мобільного меню" width="40" height="40">
+          <use class="icon-cross" href="./images/icons/sprites.svg#cross"></use>
+          <use class="icon-burger" href="./images/icons/sprites.svg#burger"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <!--банер-->
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero__container container">
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero__btn" data-modal-open>
+          Замовити послугу
+        </button>
+      </div>
+    </section>
+
+    <!--Абзаци-->
+    <section class="solution section">
+      <div class="container">
+        <h2 class="visually--hidden">особливості</h2>
+        <ul class="solution-list">
+          <li class="solution__item solution__item--antena">
+            <h3 class="solution__title">Увага до деталей</h3>
+            <p class="solution__description">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li class="solution__item solution__item--clock">
+            <h3 class="solution__title">Пунктуальність</h3>
+            <p class="solution__description">
+              Завдання організації, особливо рамки і місце навчання кадрів
+              тягне у себе.
+            </p>
+          </li>
+          <li class="solution__item solution__item--diagram">
+            <h3 class="solution__title">Планування</h3>
+            <p class="solution__description">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="solution__item solution__item--astro">
+            <h3 class="solution__title">Сучасні технології</h3>
+            <p class="solution__description">
+              Значимість цих проблем настільки очевидна, що реалізація
+              планових завдань.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--Робота-->
+    <section class="work section">
+      <div class="container">
+        <h2 class="section__title">Чим ми займаємося</h2>
+        <ul class="work__list">
+          <li class="work__item">
+            <img class="work__img" src="./images/box1.jpg" alt="work on laptop" width="370" />
+            <p class="work__text">Десктопні додатки</p>
+          </li>
+          <li class="work__item">
+            <img class="work__img" src="./images/box2.jpg" alt="phone with laptop" width="370" />
+            <p class="work__text">Мобільні додатки</p>
+          </li>
+          <li class="work__item">
+            <img class="work__img" src="./images/box3.jpg" alt="tablet in hands" width="370" />
+            <p class="work__text">Дизайнерські рішення</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Команда-->
+    <section class="command section">
+      <div class="container">
+        <h2 class="section__title">Наша команда</h2>
+
+        <ul class="command__list">
+          <li class="command__item">
+            <picture class="command__thumb">
+              <!-- Mobile -->
+              <source type="image/webp" srcset="
+                    ./images/command/igor-450.webp     450w,
+                    ./images/command/igor-450@2x.webp  900w,
+                    ./images/command/igor-450@3x.webp 1350w
+                  " media="screen and (max-width:767px)" sizes="100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/igor-450.jpg     450w,
+                    ./images/command/igor-450@2x.jpg  900w,
+                    ./images/command/igor-450@3x.jpg 1350w
+                  " media="screen and (max-width:767px)" sizes="100vw" />
+              <!-- Tablet -->
+              <source type="image/webp" srcset="
+                    ./images/command/igor-354.webp     354w,
+                    ./images/command/igor-354@2x.webp  708w,
+                    ./images/command/igor-354@3x.webp 1062w
+                  " media="screen and (max-width:1199px)" sizes="(min-width: 768px) 50vw, 100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/igor-354.jpg     354w,
+                    ./images/command/igor-354@2x.jpg  708w,
+                    ./images/command/igor-354@3x.jpg 1062w
+                  " media="screen and (max-width:1199px)" sizes="(min-width: 768px) 50vw, 100vw" />
+              <!-- Desktop -->
+              <source type="image/webp" srcset="
+                    ./images/command/igor-270.webp    270w,
+                    ./images/command/igor-270@2x.webp 540w,
+                    ./images/command/igor-270@3x.webp 810w
+                  " media="screen and (min-width:1200px)" sizes="(min-width: 1200px) 25vw, 100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/igor-270.jpg    270w,
+                    ./images/command/igor-270@2x.jpg 540w,
+                    ./images/command/igor-270@3x.jpg 810w
+                  " media="screen and (min-width:1200px)" sizes="(min-width: 1200px) 25vw, 100vw" />
+              <img class="command__img" src="./images/command/igor-270.jpg" alt="Игорь" srcset="
+                    ./images/command/igor-270.jpg 270w,
+                    ./images/command/igor-354.jpg 354w,
+                    ./images/command/igor-450.jpg 450w
+                  " sizes="
+                  (min-width: 1200px) 25vw,
+                  (min-width: 768px) 50vw, 100vw
+                  " />
+            </picture>
+
+            <!-- <img class="command__img" src="./images/img.jpg" alt="man in glases" width="270" /> -->
+
+            <div class="command__container">
+              <h3 class="command__title">Ігор Дем'яненко</h3>
+              <p class="command__text">Product Designer</p>
+
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-twit"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-face"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-lkdl"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="command__item">
+            <picture class="command__thumb">
+              <!-- Mobile -->
+              <source type="image/webp" srcset="
+                    ./images/command/olga-450.webp     450w,
+                    ./images/command/olga-450@2x.webp  900w,
+                    ./images/command/olga-450@3x.webp 1350w
+                  " media="screen and (max-width:767px)" sizes="100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/olga-450.jpg     450w,
+                    ./images/command/olga-450@2x.jpg  900w,
+                    ./images/command/olga-450@3x.jpg 1350w
+                  " media="screen and (max-width:767px)" sizes="100vw" />
+              <!-- Tablet -->
+              <source type="image/webp" srcset="
+                    ./images/command/olga-354.webp     354w,
+                    ./images/command/olga-354@2x.webp  708w,
+                    ./images/command/olga-354@3x.webp 1062w
+                  " media="screen and (max-width:1199px)" sizes="(min-width: 768px) 50vw, 100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/olga-354.jpg     354w,
+                    ./images/command/olga-354@2x.jpg  708w,
+                    ./images/command/olga-354@3x.jpg 1062w
+                  " media="screen and (max-width:1199px)" sizes="(min-width: 768px) 50vw, 100vw" />
+              <!-- Desktop -->
+              <source type="image/webp" srcset="
+                    ./images/command/olga-270.webp    270w,
+                    ./images/command/olga-270@2x.webp 540w,
+                    ./images/command/olga-270@3x.webp 810w
+                  " media="screen and (min-width:1200px)" sizes="(min-width: 1200px) 25vw, 100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/olga-270.jpg    270w,
+                    ./images/command/olga-270@2x.jpg 540w,
+                    ./images/command/olga-270@3x.jpg 810w
+                  " media="screen and (min-width:1200px)" sizes="(min-width: 1200px) 25vw, 100vw" />
+              <img class="command__img" src="./images/command/olga-270.jpg" alt="Ольга" srcset="
+                    ./images/command/olga-270.jpg 270w,
+                    ./images/command/olga-354.jpg 354w,
+                    ./images/command/olga-450.jpg 450w
+                  " sizes="
+                  (min-width: 1200px) 25vw,
+                  (min-width: 768px) 50vw, 100vw
+                  " />
+            </picture>
+
+            <!-- <img class="command__img" src="./images/1img.jpg" alt="girl in glasses" width="270" /> -->
+
+            <div class="command__container">
+              <h3 class="command__title">Ольга Рєпіна</h3>
+              <p class="command__text">Frontend Developer</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-twit"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-face"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socia__-item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-lkdl"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="command__item">
+            <!-- <img class="command__img" src="./images/2img.jpg" alt="man" width="270" /> -->
+
+            <picture class="command__thumb">
+              <!-- Mobile -->
+              <source type="image/webp" srcset="
+                    ./images/command/nikola-450.webp     450w,
+                    ./images/command/nikola-450@2x.webp  900w,
+                    ./images/command/nikola-450@3x.webp 1350w
+                  " media="screen and (max-width:767px)" sizes="100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/nikola-450.jpg     450w,
+                    ./images/command/nikola-450@2x.jpg  900w,
+                    ./images/command/nikola-450@3x.jpg 1350w
+                  " media="screen and (max-width:767px)" sizes="100vw" />
+              <!-- Tablet -->
+              <source type="image/webp" srcset="
+                    ./images/command/nikola-354.webp     354w,
+                    ./images/command/nikola-354@2x.webp  708w,
+                    ./images/command/nikola-354@3x.webp 1062w
+                  " media="screen and (max-width:1199px)" sizes="(min-width: 768px) 50vw, 100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/nikola-354.jpg     354w,
+                    ./images/command/nikola-354@2x.jpg  708w,
+                    ./images/command/nikola-354@3x.jpg 1062w
+                  " media="screen and (max-width:1199px)" sizes="(min-width: 768px) 50vw, 100vw" />
+              <!-- Desktop -->
+              <source type="image/webp" srcset="
+                    ./images/command/nikola-270.webp    270w,
+                    ./images/command/nikola-270@2x.webp 540w,
+                    ./images/command/nikola-270@3x.webp 810w
+                  " media="screen and (min-width:1200px)" sizes="(min-width: 1200px) 25vw, 100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/nikola-270.jpg    270w,
+                    ./images/command/nikola-270@2x.jpg 540w,
+                    ./images/command/nikola-270@3x.jpg 810w
+                  " media="screen and (min-width:1200px)" sizes="(min-width: 1200px) 25vw, 100vw" />
+              <img class="command__img" src="./images/command/nikola-270.jpg" alt="Николай" srcset="
+                    ./images/command/nikola-270.jpg 270w,
+                    ./images/command/nikola-354.jpg 354w,
+                    ./images/command/nikola-450.jpg 450w
+                  " sizes="
+                  (min-width: 1200px) 25vw,
+                  (min-width: 768px) 50vw, 100vw
+                  " />
+            </picture>
+
+            <div class="command__container">
+              <h3 class="command__title">Микола Тарасов</h3>
+              <p class="command__text">Marketing</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-twit"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-face"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-lkdl"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="command__item">
+            <!-- <img class="command__img" src="./images/3img.jpg" alt="man 1" width="270" /> -->
+
+            <picture class="command__thumb">
+              <!-- Mobile -->
+              <source type="image/webp" srcset="
+                    ./images/command/mike-450.webp     450w,
+                    ./images/command/mike-450@2x.webp  900w,
+                    ./images/command/mike-450@3x.webp 1350w
+                  " media="screen and (max-width:767px)" sizes="100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/mike-450.jpg     450w,
+                    ./images/command/mike-450@2x.jpg  900w,
+                    ./images/command/mike-450@3x.jpg 1350w
+                  " media="screen and (max-width:767px)" sizes="100vw" />
+              <!-- Tablet -->
+              <source type="image/webp" srcset="
+                    ./images/command/mike-354.webp     354w,
+                    ./images/command/mike-354@2x.webp  708w,
+                    ./images/command/mike-354@3x.webp 1062w
+                  " media="screen and (max-width:1199px)" sizes="(min-width: 768px) 50vw, 100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/mike-354.jpg     354w,
+                    ./images/command/mike-354@2x.jpg  708w,
+                    ./images/command/mike-354@3x.jpg 1062w
+                  " media="screen and (max-width:1199px)" sizes="(min-width: 768px) 50vw, 100vw" />
+              <!-- Desktop -->
+              <source type="image/webp" srcset="
+                    ./images/command/mike-270.webp    270w,
+                    ./images/command/mike-270@2x.webp 540w,
+                    ./images/command/mike-270@3x.webp 810w
+                  " media="screen and (min-width:1200px)" sizes="(min-width: 1200px) 25vw, 100vw" />
+              <source type="image/jpeg" srcset="
+                    ./images/command/mike-270.jpg    270w,
+                    ./images/command/mike-270@2x.jpg 540w,
+                    ./images/command/mike-270@3x.jpg 810w
+                  " media="screen and (min-width:1200px)" sizes="(min-width: 1200px) 25vw, 100vw" />
+              <img class="command__img" src="./images/command/mike-270.jpg" alt="Михаил" srcset="
+                    ./images/command/mike-270.jpg 270w,
+                    ./images/command/mike-354.jpg 354w,
+                    ./images/command/mike-450.jpg 450w
+                  " sizes="
+                  (min-width: 1200px) 25vw,
+                  (min-width: 768px) 50vw, 100vw
+                  " />
+            </picture>
+
+            <div class="command__container">
+              <h3 class="command__title">Михайло Єрмаков</h3>
+              <p class="command__text">UI Designer</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-twit"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-face"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="" aria-label="іконка">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./images/social-defs.svg#icon-lkdl"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Логотипи клієнтів-->
+    <section class="section clients">
+      <div class="container">
+        <h2 class="section__title">Постійні клієнти</h2>
+        <ul class="clients__list">
+          <li class="clients__item">
+            <a class="clients__link" href="" aria-label="іконка">
+              <svg class="clients__icon" width="106" height="60">
+                <use href="./images/icon-defs.svg#icon-logo1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__item">
+            <a class="clients__link" href="" aria-label="іконка">
+              <svg class="clients__icon" width="106" height="60">
+                <use href="./images/icon-defs.svg#icon-logo2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__item">
+            <a class="clients__link" href="" aria-label="іконка">
+              <svg class="clients__icon" width="106" height="60">
+                <use href="./images/icon-defs.svg#icon-logo3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__item">
+            <a class="clients__link" href="" aria-label="іконка">
+              <svg class="clients__icon" width="106" height="60">
+                <use href="./images/icon-defs.svg#icon-logo4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__item">
+            <a class="clients__link" href="" aria-label="іконка">
+              <svg class="clients__icon" width="106" height="60">
+                <use href="./images/icon-defs.svg#icon-logo5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__item">
+            <a class="clients__link" href="" aria-label="іконка">
+              <svg class="clients__icon" width="106" height="60">
+                <use href="./images/icon-defs.svg#icon-logo6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+      <!-- Footer -->
+  <footer class="footer__section">
+
+    <!--Адреса-->
+    <div class="address__part container">
+      <div class="footer__block">
+        <a href="./index.html" class="footer__link"><span class="footer__logo">Web</span>Studio</a>
+        <address class="address">
+          <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+            class="address__link--location">м. Київ, пр-т Лесі Українки, 26</a>
+          <ul class="address__list">
+            <li class="address__item">
+              <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+            </li>
+            <li class="address__item">
+              <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer">
+        <p class="footer__text">Приєднуйтесь</p>
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="" aria-label="іконка">
+              <svg class="footer-social__icon" width="20" height="20">
+                <use href="./images/social-defs.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="" aria-label="іконка">
+              <svg class="footer-social__icon" width="20" height="20">
+                <use href="./images/social-defs.svg#icon-twit"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="" aria-label="іконка">
+              <svg class="footer-social__icon" width="20" height="20">
+                <use href="./images/social-defs.svg#icon-face"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="" aria-label="іконка">
+              <svg class="footer-social__icon" width="20" height="20">
+                <use href="./images/social-defs.svg#icon-lkdl"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Footer-form -->
+      <form action="" class="footer-form">
+        <p class="footer__text">Підпишіться на розсилку</p>
+        <label class="footer-form__field">
+          <input type="text" placeholder="E-mail" class="footer-form__input" />
+          <a href="" class="footer-form__link" aria-label="іконка">
+            Підписатися
+            <svg class="footer-form__icon" width="24" height="24">
+              <use href="./images/form-defs.svg#icon-icon_send"></use>
+            </svg>
+          </a>
+        </label>
+      </form>
+    </div>
+  </footer>
+  
+  <!-- Modal -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal" data-modal>
+      <button class="modal-btn__exe" data-modal-close>
+        <svg class="modal__icon" width="18" height="18">
+          <use href="./images/x-defs.svg#icon-close-black-18dp"></use>
+        </svg>
+      </button>
+
+      
+      <!-- Modal-form -->
+      <form action="" class="form">
+        <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
+        <label class="form__field">
+          <span class="form__label">Ім'я</span>
+          <input type="text" class="form__input" />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/form-defs.svg#icon-phone-black"></use>
+          </svg>
+        </label>
+        <label class="form__field">
+          <span class="form__label">Телефон</span>
+          <input type="tel" class="form__input" />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/form-defs.svg#icon-phone-black1"></use>
+          </svg>
+        </label>
+        <label class="form__field">
+          <span class="form__label">Пoшта</span>
+          <input type="mail" class="form__input" />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/form-defs.svg#icon-email-black"></use>
+          </svg>
+        </label>
+        <label class="comment"><span class="comment__label">Коментар</span>
+          <textarea for="comment" id="comment" rows="" placeholder="Введіть текст" class="comment__text"></textarea>
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" name="policy" value="html" class="checkbox__field" />
+          <span 
+          class="checkbox__icon"></span>
+          <div class="checkbox-text">
+            Погоджуюся з розсилкою та
+          приймаю
+          <a href="" class="checkbox__link">Умови договору</a>
+          </div>
+          
+        </label>
+        <div class="form__button">
+          <button type="submit" class="form__btn">Відправити</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="./js/modal.js"></script>
+  <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script> -->
+  <script defer src="./js/menu.js"></script>
+  <script src="./js/form.js"></script>
+</body>
+
+</html>

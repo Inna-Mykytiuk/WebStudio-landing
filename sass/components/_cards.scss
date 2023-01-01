@@ -1,0 +1,121 @@
+.cards {
+   background-color: $main-white-color;
+
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0;
+
+   display: flex;
+   flex-wrap: wrap;
+
+   gap: 30px;
+   justify-content: center;
+
+   @media (max-width: 767px) {
+      justify-content: center;
+
+
+   // gap: 30px;
+   // min-width: 450px;
+   
+   }
+}
+
+.cards__item {
+   width: 100%;
+
+   @media (max-width: 480px) {
+      width: 100%;
+      justify-content: center;
+   }
+
+
+   @media (min-width: 768px) {
+   width: calc((100% - 30px) / 2);
+   
+   }
+   @media (min-width: 1200px) {
+   width: calc((100% - 60px) / 3);
+   }
+}
+
+.cards__img {
+   display: block;
+   margin: 0;
+   width: 100%;
+   height: auto;
+}
+
+.cards__link {
+   display: block;
+   text-decoration: none;
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus  {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+   }
+   width: 100%;
+   
+}
+
+.cards__block {
+   position: relative;
+   display: block;
+   overflow: hidden;
+
+}
+
+.cards__text {
+   background-color: rgba(33, 150, 243, 0.9);
+   font-size: $fs-18;
+   line-height: 1.56;
+   letter-spacing: 0.03em;
+   color: $main-white-color;
+
+   margin-top: 0;
+   margin-bottom: 0;
+   padding: 63px 24px;
+
+   position: absolute;
+   transform: translateY(0);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   .cards__link:hover &,
+   .cards__link:focus & {
+transform: translateY(-100%);
+   }
+   
+}
+
+// @media (min-width: 480px) {
+//    .cards__text {
+//       font-size: 14px;
+//       // padding: 77px 24px;
+//    }
+
+// }
+
+.content {
+   padding: 20px 24px;
+   border: 1px solid $border-color;
+   border-top: none;
+   &__title {
+   color: $title-text-color;
+
+   font-weight: $fw-bold;
+   font-size: $fs-18;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+}
+
+.content__text {
+   color: $primary-text-color;
+
+   font-weight: $fw-normal;
+   font-size: $fs-16;
+   line-height: 1.88;
+
+   margin-top: 4px;
+   margin-bottom: 0;
+}
